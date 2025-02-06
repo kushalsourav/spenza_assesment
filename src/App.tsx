@@ -32,7 +32,59 @@ function App() {
   useEffect(() => {
 
     getData().then((data) => {
-      const parsedContent = data?.data
+      const parsedContent = data?.data || [
+        {
+          "id": 1,
+          "region": "US",
+          "data": 290
+        }, {
+          "id": 2,
+          "region": "US",
+          "data": 490
+        }, {
+          "id": 3,
+          "region": "AT",
+          "data": 790
+        }, {
+          "id": 4,
+          "region": "SE",
+          "data": 590
+        }, {
+          "id": 5,
+          "region": "AT",
+          "data": 290
+        }, {
+          "id": 6,
+          "region": "SE",
+          "data": 390
+        }
+        {
+          "id": 7,
+          "region": "FR",
+          "data": 420
+        },
+        {
+          "id": 8,
+          "region": "DE",
+          "data": 600
+        },
+        {
+          "id": 9,
+          "region": "IT",
+          "data": 310
+        },
+        {
+          "id": 10,
+          "region": "ES",
+          "data": 560
+        },
+        {
+          "id": 11,
+          "region": "NL",
+          "data": 720
+        }
+      ]
+
       setState(parsedContent)
     })
 
@@ -77,12 +129,12 @@ function App() {
     <>
       <div className="container">
         <div className="container-header">
-        <RangeBar region={state} />
-        <button className='form-button add-btn' onClick={openModal}>
-          Add New data
-        </button>
+          <RangeBar region={state} />
+          <button className='form-button add-btn' onClick={openModal}>
+            Add New data
+          </button>
         </div>
-    
+
         <Modal
           isOpen={isModalOpen}
           onRequestClose={closeModal}
