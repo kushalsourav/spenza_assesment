@@ -1,0 +1,36 @@
+.card {
+color: #ffff;
+width: 150px;
+height: 100%;
+cursor: context-menu;
+z-index: 999999999 !important;
+user-select: none;
+text-align: center;
+padding: 20px;
+
+}
+.card-heading {
+    color: rgba(255, 255, 255, 0.51);
+}
+
+.card-info {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: rgb(230, 230, 230);
+}
+
+.card-list {
+    list-style-type: none;
+
+    padding: 0;
+    text-align: center;
+
+}
+.card-list-item {
+    padding: 8px 0 5px 0; 
+    border-bottom: 1px solid #fff;
+}
+.card-list-item:first-child {
+    border-top: 1px solid #fff;
+}
