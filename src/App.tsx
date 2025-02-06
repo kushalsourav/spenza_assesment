@@ -57,7 +57,7 @@ function App() {
           "id": 6,
           "region": "SE",
           "data": 390
-        }
+        },
         {
           "id": 7,
           "region": "FR",
