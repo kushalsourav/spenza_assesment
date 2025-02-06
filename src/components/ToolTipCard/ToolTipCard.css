@@ -1,14 +1,15 @@
 .card {
-color: #ffff;
-width: 150px;
-height: 100%;
-cursor: context-menu;
-z-index: 999999999 !important;
-user-select: none;
-text-align: center;
-padding: 20px;
+    color: #ffff;
+    width: 150px;
+    height: 100%;
+    cursor: context-menu;
+    z-index: 999999999 !important;
+    user-select: none;
+    text-align: center;
+    padding: 20px;
 
 }
+
 .card-heading {
     color: rgba(255, 255, 255, 0.51);
 }
@@ -27,10 +28,12 @@ padding: 20px;
     text-align: center;
 
 }
+
 .card-list-item {
-    padding: 8px 0 5px 0; 
+    padding: 8px 0 5px 0;
     border-bottom: 1px solid #fff;
 }
+
 .card-list-item:first-child {
     border-top: 1px solid #fff;
 }
