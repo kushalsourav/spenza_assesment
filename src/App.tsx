@@ -11,6 +11,8 @@ import { fetchLatLongAtOnce, customStyles } from './utils/utils';
 import MapView from './components/MapView/MapView';
 import Form from './components/Form/Form';
 import RangeBar from "./components/RangeBar/RangeBar";
+import Tippy from "@tippyjs/react";
+import Details from "./components/Details/Details";
 
 interface FormData {
   region: string;
@@ -129,6 +131,17 @@ function App() {
     <>
       <div className="container">
         <div className="container-header">
+          <Tippy
+            trigger='click'
+            interactive={true}
+            arrow={false}
+            placement='bottom'
+            content={
+              <Details region={regions} />
+            }
+          >
+            <button className="form-button">View Regions</button>
+          </Tippy>
           <RangeBar region={state} />
           <button className='form-button add-btn' onClick={openModal}>
             Add New data
